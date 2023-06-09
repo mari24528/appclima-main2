@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <main>
+
+
+        <div id="app">
+
+
+            <div class="card">
+                <div class="face front">
+
+                    <img :src="usuarios[0].imagen_url" alt="Imagen">
+                </div>
+                <div class="face back">
+                    <h1>{{ usuarios[0].area }}</h1>
+                    <h1 class="">{{ usuarios[0].nombre }}</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face front">
+
+                    <img :src="usuarios[1].imagen_url" alt="Imagen">
+                </div>
+                <div class="face back">
+                    <h1>{{ usuarios[1].area }}</h1>
+                    <h1 class="">{{ usuarios[1].nombre }}</h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face front">
+
+                    <img :src="usuarios[2].imagen_url" alt="Imagen">
+                </div>
+                <div class="face back">
+                    <h1>{{ usuarios[2].area }}</h1>
+                    <h1 class="">{{ usuarios[2].nombre }}</h1>
+                </div>
+            </div>
+
+
+            <script>
+
+
+                new Vue({
+                    el: '#app',
+                    data: {
+                        usuarios: []
+                    },
+                    mounted() {
+                        fetch('./data.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                this.usuarios = data;
+                            })
+                            .catch(error => console.log(error));
+                    }
+
+                });
+
+            </script>
+
+
+
+
+
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</body>
+
+<br>
+<footer>
+
+
+
+    <p>Copyright © 2023 Rústico Producciones</p>
+</footer>
+</body>
+
+
+</html>

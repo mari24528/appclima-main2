@@ -8,48 +8,57 @@ body {
   background-size: cover;
 }
 
+.container {
+  padding: 10px;
+  margin: 5px;
+}
+
 .input-group {
   width: 60%;
   height: 20%;
 }
 
+.titulos {
+  text-decoration: underline;
+}
 
 .card {
   max-width: 60%;
-  background:linear-gradient(#0b486b, #f56217);
+  background: linear-gradient(#0b486b, #f56217);
+
 
 }
 
-.card-imge {
-  display: flex;
-  justify-content: flex-start;
-  width: 300px;
-  height: 400px;
-  ;
-}
+
 
 .title {
   position: center;
   padding: 20px;
 
+
+}
+
+/* .fondo{
+ 
+} */
+.divpadreactual {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .actual {
-  width: 200px;
-  
-  display: flex;
- flex-direction: column;
- 
- justify-content: center;
+  width: 600px;
+  background-image: url(https://cdn.wallpapersafari.com/4/89/ShoYtm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  opacity: 90%;
+  color: white;
 
 }
-.img{ 
-  width: 600px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items:end;
-}
+
 .forecast {
   display: flex;
   justify-content: space-evenly;
@@ -60,8 +69,8 @@ body {
 }
 
 .tarjeta {
-  background-color: black;
-  opacity: 40%;
+
+  border: 1px solid;
   text-align: center;
   width: 200px;
   height: 280px;

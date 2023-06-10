@@ -3,12 +3,12 @@ import '../assets/css/Simbolodecarga.css';
 
 const Simbolodecarga = () => {
 
-    return(
+    return (
         <div className="lds-facebook">
             <div></div>
             <div></div>
             <div></div>
-            </div>
+        </div>
     );
 }
 

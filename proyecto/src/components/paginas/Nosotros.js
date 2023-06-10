@@ -2,7 +2,8 @@ import React from 'react'
 
 const Nosotros = () => {
   return (
-    <div>Nosotros</div>
+ 
+    <h1>hola</h1>
   )
 }
 
